@@ -16,4 +16,6 @@ public class Edges {
         this.maxWidths = new Integer[n];
         this.leftWidths = new Integer[n];
     }
+    public Edges () {
+    }
 }

@@ -23,4 +23,5 @@ public class Customers {
         this.needWidths = new Integer[n];
         costMap = new HashMap<>();
     }
+
 }

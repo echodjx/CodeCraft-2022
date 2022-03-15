@@ -2,13 +2,16 @@ package com.huawei.java.util;
 
 import com.huawei.java.entity.Customers;
 import com.huawei.java.entity.Edges;
+import com.huawei.java.entity.QosLimit;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-
+import java.io.FileInputStream;
+import java.io.OutputStream;
+import java.util.Properties;
 public class PreprocessData {
     private static final String FILE_PATH = "src//com//huawei//java//data//";
 
@@ -119,5 +122,15 @@ public class PreprocessData {
                 e.printStackTrace();
             }
         }
+    }
+
+    public static void readConfig() throws IOException {
+        //创建文件输入流
+        FileInputStream fis = new FileInputStream(FILE_PATH + "config.ini");
+        Properties pps = new Properties();
+        //从文件流中加载属性
+        pps.load(fis);
+        QosLimit.qos_constraint = Integer.parseInt(pps.getProperty("qos_constraint"));
+        System.out.println("QoS限制读取完成:"+QosLimit.qos_constraint);
     }
 }

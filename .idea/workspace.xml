@@ -1,23 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c4358991-f5d2-4de1-a637-9b37877c5871" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/huawei/java/util/Zimpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeCraft-2022.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CodeCraft-2022.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/entity/CostUnit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/entity/CostUnit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/entity/Customers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/entity/Customers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/entity/Edges.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/entity/Edges.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/entity/QosLimit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/entity/QosLimit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/data/output/solution.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/util/AllocateUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/util/AllocateUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/util/PreprocessData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/util/PreprocessData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huawei/java/data/demand.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/java/data/demand.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huawei/java/data/output/solution.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/huawei/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/java/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/huawei/java/util/AllocateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/java/util/AllocateUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,30 +79,62 @@
       <updated>1647432932130</updated>
       <workItem from="1647432933593" duration="34000" />
       <workItem from="1647433480445" duration="114000" />
-      <workItem from="1647433724637" duration="334000" />
+      <workItem from="1647433724637" duration="1705000" />
+      <workItem from="1647436051298" duration="21000" />
+      <workItem from="1647436160369" duration="48000" />
+      <workItem from="1647436259067" duration="34000" />
+      <workItem from="1647436662089" duration="251000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1026" height="757" key="GridCell.Tab.0.bottom" timestamp="1647433905656">
+    <state width="1026" height="685" key="GridCell.Tab.0.bottom" timestamp="1647436914628">
       <screen x="-1080" y="-572" width="1080" height="1920" />
     </state>
-    <state width="1026" height="757" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1080.-572.1080.1920@-1080.-572.1080.1920" timestamp="1647433905656" />
-    <state width="1026" height="757" key="GridCell.Tab.0.center" timestamp="1647433905656">
+    <state width="1026" height="685" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1080.-572.1080.1920@-1080.-572.1080.1920" timestamp="1647436914628" />
+    <state width="1026" height="685" key="GridCell.Tab.0.center" timestamp="1647436914628">
       <screen x="-1080" y="-572" width="1080" height="1920" />
     </state>
-    <state width="1026" height="757" key="GridCell.Tab.0.center/0.0.1920.1040/-1080.-572.1080.1920@-1080.-572.1080.1920" timestamp="1647433905656" />
-    <state width="1026" height="757" key="GridCell.Tab.0.left" timestamp="1647433905656">
+    <state width="1026" height="685" key="GridCell.Tab.0.center/0.0.1920.1040/-1080.-572.1080.1920@-1080.-572.1080.1920" timestamp="1647436914628" />
+    <state width="1026" height="685" key="GridCell.Tab.0.left" timestamp="1647436914628">
       <screen x="-1080" y="-572" width="1080" height="1920" />
     </state>
-    <state width="1026" height="757" key="GridCell.Tab.0.left/0.0.1920.1040/-1080.-572.1080.1920@-1080.-572.1080.1920" timestamp="1647433905656" />
-    <state width="1026" height="757" key="GridCell.Tab.0.right" timestamp="1647433905656">
+    <state width="1026" height="685" key="GridCell.Tab.0.left/0.0.1920.1040/-1080.-572.1080.1920@-1080.-572.1080.1920" timestamp="1647436914628" />
+    <state width="1026" height="685" key="GridCell.Tab.0.right" timestamp="1647436914628">
       <screen x="-1080" y="-572" width="1080" height="1920" />
     </state>
-    <state width="1026" height="757" key="GridCell.Tab.0.right/0.0.1920.1040/-1080.-572.1080.1920@-1080.-572.1080.1920" timestamp="1647433905656" />
+    <state width="1026" height="685" key="GridCell.Tab.0.right/0.0.1920.1040/-1080.-572.1080.1920@-1080.-572.1080.1920" timestamp="1647436914628" />
+    <state width="1026" height="685" key="GridCell.Tab.1.bottom" timestamp="1647436914629">
+      <screen x="-1080" y="-572" width="1080" height="1920" />
+    </state>
+    <state width="1026" height="685" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1080.-572.1080.1920@-1080.-572.1080.1920" timestamp="1647436914629" />
+    <state width="1026" height="685" key="GridCell.Tab.1.center" timestamp="1647436914629">
+      <screen x="-1080" y="-572" width="1080" height="1920" />
+    </state>
+    <state width="1026" height="685" key="GridCell.Tab.1.center/0.0.1920.1040/-1080.-572.1080.1920@-1080.-572.1080.1920" timestamp="1647436914629" />
+    <state width="1026" height="685" key="GridCell.Tab.1.left" timestamp="1647436914628">
+      <screen x="-1080" y="-572" width="1080" height="1920" />
+    </state>
+    <state width="1026" height="685" key="GridCell.Tab.1.left/0.0.1920.1040/-1080.-572.1080.1920@-1080.-572.1080.1920" timestamp="1647436914628" />
+    <state width="1026" height="685" key="GridCell.Tab.1.right" timestamp="1647436914629">
+      <screen x="-1080" y="-572" width="1080" height="1920" />
+    </state>
+    <state width="1026" height="685" key="GridCell.Tab.1.right/0.0.1920.1040/-1080.-572.1080.1920@-1080.-572.1080.1920" timestamp="1647436914629" />
     <state x="200" y="0" width="786" height="1109" maximized="true" key="dock-window-1" timestamp="1647434061036">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -105,8 +145,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/huawei/java/main/Main.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="1" />
+          <line>112</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

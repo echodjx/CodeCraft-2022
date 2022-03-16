@@ -8,9 +8,9 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-//    private static final String FILE_PATH = "/data/";
+    private static final String FILE_PATH = "/data/";
     // 测试
-    private static final String FILE_PATH = "src//com//huawei//java//data//";
+//    private static final String FILE_PATH = "src//com//huawei//java//data//";
 
     // <边缘节点名,边缘节点带宽>
     private static HashMap<String, Integer> bandWidth;
@@ -86,6 +86,7 @@ public class Main {
                 HashMap<String, Integer> ansMap = new HashMap<>();
                 for (int i = 0; i < connectList.size(); i++) {
                     String nodeName = connectList.get(i);
+                    if (demandVal == 0) break;
                     if (remainBW.get(nodeName) >= demandVal) {
                         ansMap.put(nodeName, demandVal);
                         remainBW.put(nodeName, remainBW.get(nodeName) - demandVal);
@@ -95,40 +96,40 @@ public class Main {
                         remainBW.put(nodeName, 0);
                         demandVal = demandVal - remainBW.get(nodeName);
                     }
-                    if (demandVal == 0) break;
+
                 }
                 ans.put(name, ansMap);
 //                System.out.print("客户-" + name + "-");
 //                for (Map.Entry<String, Integer> entry : ansMap.entrySet()) {
 //                    System.out.print(entry.getKey() + " : " + entry.getValue() + "||");
 //                }
-                // 写入文件
-                BufferedWriter buffw = null;
-                try {
-                    buffw = new BufferedWriter(new FileWriter(FILE_PATH+"/output/solution.txt",
-                            true));
-                    int idx = 0;
-                    for (Map.Entry<String, HashMap<String, Integer>> an : ans.entrySet()) {
-                        String temp = an.getKey() + ":";
-                        if (an.getValue().size() == 0) continue;
-                        for (Map.Entry<String, Integer> en : an.getValue().entrySet()) {
-                            temp = temp + "<" + en.getKey() + "," + en.getValue() + ">" + ",";
-                        }
-                        temp = temp.substring(0, temp.length() - 1);
-                        buffw.append(temp);
-                        if (idx < ans.size() - 1)
-                            buffw.append("\n");
-                        idx++;
-                    }
 
+            }
+            // 写入文件
+            BufferedWriter buffw = null;
+            try {
+                buffw = new BufferedWriter(new FileWriter( "/output/solution.txt",
+                        true));
+                for (Map.Entry<String, HashMap<String, Integer>> an : ans.entrySet()) {
+                    String temp = an.getKey() + ":";
+                    if (an.getValue().size() == 0) {
+                        buffw.append(temp + "\n");
+                        continue;
+                    }
+                    for (Map.Entry<String, Integer> en : an.getValue().entrySet()) {
+                        temp = temp + "<" + en.getKey() + "," + en.getValue() + ">" + ",";
+                    }
+                    temp = temp.substring(0, temp.length() - 1);
+                    buffw.append(temp + "\n");
+                }
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            } finally {
+                try {
+                    if (buffw != null) buffw.close();
                 } catch (IOException e) {
                     e.printStackTrace();
-                } finally {
-                    try {
-                        if (buffw != null) buffw.close();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
                 }
             }
 
@@ -240,7 +241,7 @@ public class Main {
         BufferedReader reader = null;
         String line;
         try {
-            reader = new BufferedReader(new FileReader(FILE_PATH + "site_bandwidth.csv"));
+            reader = new BufferedReader(new FileReader(FILE_PATH+"site_bandwidth.csv"));
             // 数据项
             reader.readLine();
             int n = 0;

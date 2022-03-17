@@ -23,9 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4358991-f5d2-4de1-a637-9b37877c5871" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/huawei/java/algorithms/BaseData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/huawei/java/algorithms/GA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data/config.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data/demand.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data/output/solution.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data/qos.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data/site_bandwidth.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +57,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/huawei/java/entity" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -103,6 +106,9 @@
       <workItem from="1647436160369" duration="48000" />
       <workItem from="1647436259067" duration="34000" />
       <workItem from="1647436662089" duration="251000" />
+      <workItem from="1647498350000" duration="34000" />
+      <workItem from="1647500350548" duration="611000" />
+      <workItem from="1647508311147" duration="603000" />
     </task>
     <servers />
   </component>
@@ -119,6 +125,25 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1026" height="433" key="GridCell.Tab.0.bottom" timestamp="1647498383687">
+      <screen x="-1080" y="-572" width="1080" height="1920" />
+    </state>
+    <state width="1026" height="433" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1080.-572.1080.1920@-1080.-572.1080.1920" timestamp="1647498383687" />
+    <state width="1026" height="433" key="GridCell.Tab.0.center" timestamp="1647498383687">
+      <screen x="-1080" y="-572" width="1080" height="1920" />
+    </state>
+    <state width="1026" height="433" key="GridCell.Tab.0.center/0.0.1920.1040/-1080.-572.1080.1920@-1080.-572.1080.1920" timestamp="1647498383687" />
+    <state width="1026" height="433" key="GridCell.Tab.0.left" timestamp="1647498383687">
+      <screen x="-1080" y="-572" width="1080" height="1920" />
+    </state>
+    <state width="1026" height="433" key="GridCell.Tab.0.left/0.0.1920.1040/-1080.-572.1080.1920@-1080.-572.1080.1920" timestamp="1647498383687" />
+    <state width="1026" height="433" key="GridCell.Tab.0.right" timestamp="1647498383687">
+      <screen x="-1080" y="-572" width="1080" height="1920" />
+    </state>
+    <state width="1026" height="433" key="GridCell.Tab.0.right/0.0.1920.1040/-1080.-572.1080.1920@-1080.-572.1080.1920" timestamp="1647498383687" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

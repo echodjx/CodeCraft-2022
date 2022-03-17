@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.TreeMap;
 
-public class AvgAlgorithm extends BaseData{
+public class AvgAlgorithm extends BaseDataOffline {
 
     public void greedyForAvgWidth() {
 

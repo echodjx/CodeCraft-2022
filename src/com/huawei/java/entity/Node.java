@@ -16,6 +16,6 @@ public class Node implements Comparable<Node>{
 
     @Override
     public int compareTo(Node node) {
-        return this.qos - node.qos;
+        return node.qos - this.qos;
     }
 }

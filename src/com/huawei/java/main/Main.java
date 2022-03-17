@@ -39,10 +39,10 @@ public class Main {
         readDemand();
         readQos();
         readConfig();
-        greedyForMinQos();
+        greedyForAvgWidth();
     }
 
-    public static void greedyForMinQos() {
+    public static void greedyForAvgWidth() {
 
         BufferedWriter bufw = null;
         try {
@@ -65,15 +65,30 @@ public class Main {
                     heap.add(new Node(qosUnit.getKey(), qosUnit.getValue()));
                 }
 
+                // 删去不符合条件节点
+                while (heap.peek().qos >= qos_constraint) {
+                    heap.poll();
+                }
+
+                Integer avg = demandUnit.getValue() / heap.size() + 1;
+                PriorityQueue<Node> tmpQueue = new PriorityQueue<>();
                 while (demandUnit.getValue() > 0) {
                     Node node = heap.poll();
-                    Integer allocate = Math.min(demandUnit.getValue(), bandWidthCopy.get(node.name));
+                    Integer allocate = Math.min(avg, bandWidthCopy.get(node.name));
+                    allocate = Math.min(allocate, demandUnit.getValue());
                     if (allocate != 0) {
                         demandUnit.setValue(demandUnit.getValue() - allocate);
                         bandWidthCopy.put(node.name, bandWidthCopy.get(node.name) - allocate);
                         if (resMap.get(demandUnit.getKey()) == null)
                             resMap.put(demandUnit.getKey(), new TreeMap<>());
-                        resMap.get(demandUnit.getKey()).put(node.name, allocate);
+                        resMap.get(demandUnit.getKey()).put(node.name, resMap.get(demandUnit.getKey()).getOrDefault(node.name, 0) + allocate);
+                    }
+                    if (bandWidthCopy.get(node.name) != 0)
+                        tmpQueue.add(node);
+                    if (heap.size() == 0) {
+                        while (tmpQueue.size() != 0)
+                            heap.add(tmpQueue.poll());
+                        avg = demandUnit.getValue() / heap.size() + 1;
                     }
                 }
 

@@ -25,8 +25,10 @@
     <list default="true" id="c4358991-f5d2-4de1-a637-9b37877c5871" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/data/output/solution.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/data/output/solution.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/entity/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/entity/Node.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/main/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/huawei/java/data/output/solution.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/java/data/output/solution.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huawei/java/entity/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/java/entity/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/huawei/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/java/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,5 +115,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -3,10 +3,7 @@ package com.huawei.java.algorithms;
 import com.huawei.java.entity.Node;
 
 import java.io.*;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.PriorityQueue;
-import java.util.TreeMap;
+import java.util.*;
 
 public class AvgAlgorithm extends BaseData{
 
@@ -18,16 +15,41 @@ public class AvgAlgorithm extends BaseData{
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+
+        //寻找负载节点
+        HashMap<String, Integer> loadSort = new HashMap<>();
+        for (Map.Entry<String, Map<String, Integer>> Edges : QoS.entrySet()) {
+            for (Map.Entry<String, Integer> EtoC : Edges.getValue().entrySet()) {
+                if(EtoC.getValue() < qos_constraint) {
+                    if(loadSort.get(EtoC.getKey()) == null) {
+                        loadSort.put(EtoC.getKey(),new Integer(0));
+                    }
+                    loadSort.put(EtoC.getKey(),loadSort.get(EtoC.getKey()) + 1);
+                }
+            }
+        }
+        Comparator<Node> LengthComparator = new Comparator<Node>() {
+            public int compare(Node s1, Node s2) {
+                return s2.qos - s1.qos;//这里是边缘节点频次 不是qos
+            }
+        };
+        PriorityQueue<Node> loadList = new PriorityQueue<>(LengthComparator);
+        for (Map.Entry<String, Integer> enter : loadSort.entrySet()) {
+            loadList.add(new Node(enter.getKey(),enter.getValue()));
+        }
+        int rdnum = bandWidth.size()/30;//负载节点数量
+        HashMap<String, Integer> loadNode = new HashMap<>();//建立负载节点
+        while(!loadList.isEmpty()){
+            String str = loadList.poll().name;
+            loadNode.put(str,1);
+            rdnum--;
+            if(rdnum <= 0) break;
+        }
+
         // 遍历时间片
         for (Map<String, Integer> demands : demand.values()) {
             HashMap<String, Integer> bandWidthCopy = new HashMap<>(bandWidth);
-            int rdnum = bandWidthCopy.size()/20;//负载节点数量
-            HashMap<String, Integer> loadNode = new HashMap<>();//建立负载节点
-            for (Map.Entry<String, Integer> loadChose : bandWidthCopy.entrySet()) {
-                rdnum--;
-                loadNode.put(loadChose.getKey(),loadChose.getValue());
-                if(rdnum <= 0) break;
-            }
+
             // 输出Map
             Map<String, Map<String, Integer>> resMap = new HashMap<>();
             // 遍历客户需求

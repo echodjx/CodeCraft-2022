@@ -17,7 +17,8 @@ public abstract class BaseData {
     // 测试
 //    public static final String FILE_PATH = "src//com//huawei//java//data//";
 //    public static final String OUTPUT_PATH = "src//com//huawei//java//data//output//";
-
+//    public static final String FILE_PATH = "../data/";
+//    public static final String OUTPUT_PATH = "../output/";
     // <边缘节点名,边缘节点带宽>
     public static HashMap<String, Integer> bandWidth;
     // 时间--> < 客户名 , 需求 >

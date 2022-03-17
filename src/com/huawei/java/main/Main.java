@@ -11,12 +11,12 @@ import java.util.*;
 public class Main {
 
     // 线上
-    private static final String FILE_PATH = "/data/";
-    public static final String OUTPUT_PATH = "/data/output/";
+//    private static final String FILE_PATH = "/data/";
+//    public static final String OUTPUT_PATH = "/output/";
 
     // 测试
-//    private static final String FILE_PATH = "src//com//huawei//java//data//";
-//    public static final String OUTPUT_PATH = "src//com//huawei//java//data//output//";
+    private static final String FILE_PATH = "src//com//huawei//java//data//";
+    public static final String OUTPUT_PATH = "src//com//huawei//java//data//output//";
 
     // <边缘节点名,边缘节点带宽>
     private static HashMap<String, Integer> bandWidth;
@@ -89,11 +89,11 @@ public class Main {
                     StringBuilder line = new StringBuilder();
                     line.append(resEntry.getKey() + ":");
                     for (Map.Entry<String,Integer> unit: resEntry.getValue().entrySet()) {
-                        line.append("<" + unit.getKey() + ":" + unit.getValue() + ">,");
+                        line.append("<" + unit.getKey() + "," + unit.getValue() + ">,");
                     }
                     if (line.charAt(line.length() - 1) == ',')
                         line.deleteCharAt(line.length() - 1);
-                    line.append("\n");
+                        line.append("\n");
                     bufw.write(line.toString());
                     bufw.flush();
                 }

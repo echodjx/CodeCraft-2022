@@ -23,17 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4358991-f5d2-4de1-a637-9b37877c5871" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/huawei/java/entity/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/entity/CostUnit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/entity/CostUnit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/entity/Customers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/entity/Customers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/entity/Edges.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/entity/Edges.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/entity/QosLimit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/entity/QosLimit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/data/output/solution.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/data/output/solution.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/util/AllocateUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/util/AllocateUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/util/PreprocessData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/util/PreprocessData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/util/Zimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/util/Zimpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/huawei/java/data/output/solution.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/java/data/output/solution.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/huawei/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/java/main/Main.java" afterDir="false" />
     </list>

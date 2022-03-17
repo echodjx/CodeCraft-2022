@@ -2,15 +2,21 @@ package com.huawei.java.main;
 
 import com.huawei.java.entity.Customers;
 import com.huawei.java.entity.Edges;
+import com.huawei.java.entity.Node;
 import com.huawei.java.util.PreprocessData;
 
 import java.io.*;
 import java.util.*;
 
 public class Main {
+
+    // 线上
     private static final String FILE_PATH = "/data/";
+    public static final String OUTPUT_PATH = "/data/output/";
+
     // 测试
 //    private static final String FILE_PATH = "src//com//huawei//java//data//";
+//    public static final String OUTPUT_PATH = "src//com//huawei//java//data//output//";
 
     // <边缘节点名,边缘节点带宽>
     private static HashMap<String, Integer> bandWidth;
@@ -28,14 +34,80 @@ public class Main {
 
 
     public static void main(String[] args) {
-//        System.out.println(Zimpl.class.getClassLoader().getResource("").getPath());
+//        System.out.println(Main.class.getClassLoader().getResource("").getPath());
         readBW();
         readDemand();
         readQos();
         readConfig();
-        greedy();
+        greedyForMinQos();
     }
 
+    public static void greedyForMinQos() {
+
+        BufferedWriter bufw = null;
+        try {
+            bufw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(OUTPUT_PATH + "solution.txt")));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        // 遍历时间片
+        for (Map<String, Integer> demands : demand.values()) {
+            HashMap<String, Integer> bandWidthCopy = new HashMap<>(bandWidth);
+
+            // 输出Map
+            Map<String, Map<String, Integer>> resMap = new HashMap<>();
+            // 遍历客户需求
+            for (Map.Entry<String, Integer> demandUnit : demands.entrySet()) {
+                PriorityQueue<Node> heap = new PriorityQueue<>();
+
+                // 遍历当前客户对各边缘节点QoS
+                for (Map.Entry<String, Integer> qosUnit : QoS.get(demandUnit.getKey()).entrySet()) {
+                    heap.add(new Node(qosUnit.getKey(), qosUnit.getValue()));
+                }
+
+                while (demandUnit.getValue() > 0) {
+                    Node node = heap.poll();
+                    Integer allocate = Math.min(demandUnit.getValue(), bandWidthCopy.get(node.name));
+                    if (allocate != 0) {
+                        demandUnit.setValue(demandUnit.getValue() - allocate);
+                        bandWidthCopy.put(node.name, bandWidthCopy.get(node.name) - allocate);
+                        if (resMap.get(demandUnit.getKey()) == null)
+                            resMap.put(demandUnit.getKey(), new TreeMap<>());
+                        resMap.get(demandUnit.getKey()).put(node.name, allocate);
+                    }
+                }
+
+                if (resMap.get(demandUnit.getKey()) == null) {
+                    resMap.put(demandUnit.getKey(), new TreeMap<>());
+                }
+
+            }
+            // 输出
+
+            try {
+                for (Map.Entry<String, Map<String, Integer>> resEntry : resMap.entrySet()) {
+                    StringBuilder line = new StringBuilder();
+                    line.append(resEntry.getKey() + ":");
+                    for (Map.Entry<String,Integer> unit: resEntry.getValue().entrySet()) {
+                        line.append("<" + unit.getKey() + ":" + unit.getValue() + ">,");
+                    }
+                    if (line.charAt(line.length() - 1) == ',')
+                        line.deleteCharAt(line.length() - 1);
+                    line.append("\n");
+                    bufw.write(line.toString());
+                    bufw.flush();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        try {
+            bufw.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     public static void greedy() {
 
@@ -262,25 +334,4 @@ public class Main {
             }
         }
     }
-
-
-//    public static Map<String, Map<String, Integer>> QosMap;
-//
-//    public static void main(String[] args) throws IOException {
-//        // 读入工具类
-//        PreprocessData pd = new PreprocessData();
-//        Map<String, Customers> timeLine = new HashMap<>();
-//        Edges edges =new Edges();
-//        QosMap = new HashMap<>();
-//
-//        pd.readCustomerData(timeLine);
-//        pd.readEdgesData(edges);
-//        pd.readQoSData(QosMap);
-//        pd.readConfig();
-//
-//        System.out.println(QosMap);
-//        System.out.println(edges);
-//        System.out.println(timeLine);
-//
-//    }
 }

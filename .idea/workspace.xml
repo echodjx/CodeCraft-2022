@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,11 +23,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4358991-f5d2-4de1-a637-9b37877c5871" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/huawei/java/entity/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/data/output/solution.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/entity/CostUnit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/entity/CostUnit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/entity/Customers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/entity/Customers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/entity/Edges.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/entity/Edges.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/entity/QosLimit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/entity/QosLimit.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/huawei/java/data/demand.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/java/data/demand.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/huawei/java/data/output/solution.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/util/AllocateUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/util/AllocateUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/util/PreprocessData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/util/PreprocessData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/util/Zimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/util/Zimpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huawei/java/data/output/solution.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/java/data/output/solution.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/huawei/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/java/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +56,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/huawei/java/entity" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\SDK\CodeCraft-2022\src\com\huawei\java\entity" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -100,55 +121,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1026" height="685" key="GridCell.Tab.0.bottom" timestamp="1647436914628">
-      <screen x="-1080" y="-572" width="1080" height="1920" />
-    </state>
-    <state width="1026" height="685" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1080.-572.1080.1920@-1080.-572.1080.1920" timestamp="1647436914628" />
-    <state width="1026" height="685" key="GridCell.Tab.0.center" timestamp="1647436914628">
-      <screen x="-1080" y="-572" width="1080" height="1920" />
-    </state>
-    <state width="1026" height="685" key="GridCell.Tab.0.center/0.0.1920.1040/-1080.-572.1080.1920@-1080.-572.1080.1920" timestamp="1647436914628" />
-    <state width="1026" height="685" key="GridCell.Tab.0.left" timestamp="1647436914628">
-      <screen x="-1080" y="-572" width="1080" height="1920" />
-    </state>
-    <state width="1026" height="685" key="GridCell.Tab.0.left/0.0.1920.1040/-1080.-572.1080.1920@-1080.-572.1080.1920" timestamp="1647436914628" />
-    <state width="1026" height="685" key="GridCell.Tab.0.right" timestamp="1647436914628">
-      <screen x="-1080" y="-572" width="1080" height="1920" />
-    </state>
-    <state width="1026" height="685" key="GridCell.Tab.0.right/0.0.1920.1040/-1080.-572.1080.1920@-1080.-572.1080.1920" timestamp="1647436914628" />
-    <state width="1026" height="685" key="GridCell.Tab.1.bottom" timestamp="1647436914629">
-      <screen x="-1080" y="-572" width="1080" height="1920" />
-    </state>
-    <state width="1026" height="685" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1080.-572.1080.1920@-1080.-572.1080.1920" timestamp="1647436914629" />
-    <state width="1026" height="685" key="GridCell.Tab.1.center" timestamp="1647436914629">
-      <screen x="-1080" y="-572" width="1080" height="1920" />
-    </state>
-    <state width="1026" height="685" key="GridCell.Tab.1.center/0.0.1920.1040/-1080.-572.1080.1920@-1080.-572.1080.1920" timestamp="1647436914629" />
-    <state width="1026" height="685" key="GridCell.Tab.1.left" timestamp="1647436914628">
-      <screen x="-1080" y="-572" width="1080" height="1920" />
-    </state>
-    <state width="1026" height="685" key="GridCell.Tab.1.left/0.0.1920.1040/-1080.-572.1080.1920@-1080.-572.1080.1920" timestamp="1647436914628" />
-    <state width="1026" height="685" key="GridCell.Tab.1.right" timestamp="1647436914629">
-      <screen x="-1080" y="-572" width="1080" height="1920" />
-    </state>
-    <state width="1026" height="685" key="GridCell.Tab.1.right/0.0.1920.1040/-1080.-572.1080.1920@-1080.-572.1080.1920" timestamp="1647436914629" />
-    <state x="200" y="0" width="786" height="1109" maximized="true" key="dock-window-1" timestamp="1647434061036">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="200" y="0" width="786" height="1109" maximized="true" key="dock-window-1/0.0.1920.1040/-1080.-572.1080.1920@-1080.-572.1080.1920" timestamp="1647434061036" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/huawei/java/main/Main.java</url>
-          <line>112</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

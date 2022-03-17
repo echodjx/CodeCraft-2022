@@ -9,14 +9,14 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Properties;
 
-public abstract class BaseData {
+public abstract class BaseDataOnline {
     // 线上
-//    public static final String FILE_PATH = "/data/";
-//    public static final String OUTPUT_PATH = "/output/";
+    public static final String FILE_PATH = "/data/";
+    public static final String OUTPUT_PATH = "/output/";
 
     // 测试
-    public static final String FILE_PATH = "src//com//huawei//java//data//";
-    public static final String OUTPUT_PATH = "src//com//huawei//java//data//output//";
+//    public static final String FILE_PATH = "src//com//huawei//java//data//";
+//    public static final String OUTPUT_PATH = "src//com//huawei//java//data//output//";
 
     // <边缘节点名,边缘节点带宽>
     public static HashMap<String, Integer> bandWidth;
@@ -157,7 +157,7 @@ public abstract class BaseData {
         }
     }
 
-    public BaseData() {
+    public BaseDataOnline() {
         readBW();
         readDemand();
         readQos();

@@ -23,9 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4358991-f5d2-4de1-a637-9b37877c5871" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/huawei/java/algorithms/BaseData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/huawei/java/algorithms/GA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/huawei/java/algorithms/BaseDataOnline.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huawei/java/algorithms/AvgAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/java/algorithms/AvgAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huawei/java/algorithms/BaseData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/java/algorithms/BaseDataOffline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huawei/java/algorithms/GA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/java/algorithms/GA.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +37,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -64,6 +66,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\SDK\CodeCraft-2022\src\com\huawei\java\entity" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.huawei.java.algorithms" />
     </key>
   </component>
   <component name="RunManager">

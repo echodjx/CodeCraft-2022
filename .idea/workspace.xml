@@ -23,11 +23,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4358991-f5d2-4de1-a637-9b37877c5871" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/huawei/java/algorithms/BaseDataOnline.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/huawei/java/entity/IncreUnit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/huawei/java/util/OutputUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/algorithms/AvgAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/algorithms/AvgAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/algorithms/BaseData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/algorithms/GA.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/data/output/solution.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/data/output/solution.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeCraft-2022/com/huawei/java/main/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/huawei/java/algorithms/AvgAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/java/algorithms/AvgAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/huawei/java/algorithms/BaseData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/java/algorithms/BaseDataOffline.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/huawei/java/algorithms/GA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/java/algorithms/GA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huawei/java/algorithms/GA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/java/algorithms/StepMinimizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huawei/java/data/output/solution.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/java/data/output/solution.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huawei/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/java/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +51,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="26T1nyj1dZbmmBm6AKIFtzALC0Q" />
   <component name="ProjectViewState">
@@ -134,5 +149,10 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="orderList.get(0)" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
